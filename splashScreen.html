@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <style>
+        /* Splash Screen Styling */
+        body, html {
+            background: url(images/splashbackdrop.jpg);
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        #splash-screen {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: url('blue-watercolor-splash-web-page-screen-size-background-vecto.jpg') no-repeat center center/cover; /* Replace with actual image */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        /* Animated Loader */
+        .loader {
+            margin-top: 20px;
+            width: 50px;
+            height: 50px;
+            border: 5px solid white;
+            border-top: 5px solid transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+    <meta http-equiv="refresh" content="4;url=home.html"> <!-- Redirect to home page after 4 seconds -->
+</head>
+<body>
+
+    <div id="splash-screen">
+        <h1>GOOD HEALTH AND WELL-BEING</h1>
+        <p>Ensure healthy lives and promote well beingfor allat all ages</p>
+        <p><strong>Editers:</strong> Adithya Visal, Ishan Malinda,Sahan Rasanga, Vinuda Senith</p>
+        <div class="loader"></div>
+    </div>
+
+</body>
+</html>

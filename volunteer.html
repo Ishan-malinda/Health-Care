@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/home.css">
+    <title>Volunteer - Good Health and Well-Being</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        /* Scrollable Section */
+        .scrollable-section {
+            overflow-y: auto;
+            max-height: 400px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .scrollable-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Dropdown */
+        .dropdown {
+            margin: 15px 0;
+        }
+
+        .dropdown label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .dropdown select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            font-size: 14px;
+        }
+
+        /* Cards */
+        .card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            background-color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .card button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .card button:hover {
+            background-color: #2980b9;
+        }
+
+        /* User Ratings and Reviews Section */
+        .review-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-card h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #27ae60;
+        }
+
+        .review-card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .review-card strong {
+            color: #2c3e50;
+        }
+
+        /* Feedback Form */
+        .feedback-form {
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feedback-form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-bottom: 15px;
+            resize: vertical;
+        }
+
+        .feedback-form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-right: 10px;
+        }
+
+        .feedback-form button[type="reset"] {
+            background-color: #e74c3c;
+        }
+
+        .feedback-form button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <div class="logo">
+                <img src="Images/logo.jpg" alt="Health Care Logo">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Scrollable Information Section -->
+    <section class="scrollable-section">
+        <h2>Volunteer Programs for Good Health and Well-Being</h2>
+        <div class="dropdown">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="popular">Most Popular</option>
+                <option value="newest">Newest</option>
+                <option value="health-focus">Health Focus</option>
+            </select>
+        </div>
+        <div class="card">
+            <img src="Images/volunteer1.png" alt="Health Camp Image">
+            <div>
+                <h3>Community Health Outreach</h3>
+                <p>Join us in organizing health camps, blood donation drives, and health awareness programs in
+                    underserved communities.</p>
+                <button>Join Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Images/volunteer2.png" alt="Mental Health Workshop Image">
+            <div>
+                <h3>Mental Health Support</h3>
+                <p>Volunteer to provide emotional support, counseling, or organize mental health workshops.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Images/volunteer3.jpg" alt="Yoga Session Image">
+            <div>
+                <h3>Fitness and Wellness Programs</h3>
+                <p>Lead fitness classes, yoga sessions, or wellness workshops in local communities.</p>
+                <button>Sign Up</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Images/volunteer4.avif" alt="Healthy Meal Preparation Image">
+            <div>
+                <h3>Nutrition and Healthy Eating</h3>
+                <p>Teach nutrition basics, cook healthy meals, or distribute food in food banks.</p>
+                <button>Get Involved</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Ratings and Reviews Section -->
+    <section>
+        <h2>User Ratings and Reviews</h2>
+        <div>
+            <h3>Overall Rating: 9.4/10</h3>
+            <p>Exceptional - Based on 120 reviews</p>
+        </div>
+        <div class="review-card">
+            <h4>5/5 - Great Experience</h4>
+            <p>The mental health support program was life-changing. I learned so much about emotional well-being.</p>
+            <p><strong>Reviewer:</strong> Sarah Johnson</p>
+            <p><strong>Date:</strong> 2025-02-20</p>
+        </div>
+        <div class="review-card">
+            <h4>4.5/5 - Very Good</h4>
+            <p>The fitness program was great, but I wish there were more sessions per week.</p>
+            <p><strong>Reviewer:</strong> Michael Brown</p>
+            <p><strong>Date:</strong> 2025-02-15</p>
+        </div>
+    </section>
+
+    <!-- Feedback Form -->
+    <section class="feedback-form">
+        <h2>Submit Your Feedback</h2>
+        <form>
+            <textarea placeholder="Write your review here..." rows="4"></textarea>
+            <button type="submit">Submit Feedback</button>
+            <button type="reset">Cancel</button>
+        </form>
+    </section>
+
+    <!--Main Footer-->
+    <footer class="section footer">
+        <div class="footer-cont-main">
+            <div class="footer-logo">
+                <img src="Images/logo.jpg" alt="Footer Logo" class="footer-img">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/SustDev" class="social-icon"><i class="fab fa-facebook-f"><img
+                                src="Images/fb.jpg.avif" alt="Facebook"></i></a>
+                    <a href="https://twitter.com/SustDev" class="social-icon"><i class="fab fa-twitter"><img
+                                src="Images/twitter.webp" alt="Twitter"></i></a>
+                    <a href="https://www.youtube.com/user/uncsd2012/featured" class="social-icon"><i
+                            class="fab fa-youtube"><img src="Images/yt.webp" alt="you tube"></i></a>
+                    <a href="https://www.flickr.com/photos/sustdev/" class="social-icon"><i class="fab fa-flickr"><img
+                                src="Images/flikr.png" alt="Flikr"></i></a>
+                </div>
+            </div>
+            <div class="footer-cont">
+                <div class="use-links">
+                    <h4>Website Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="profile.html">User Profile</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-cont">
+                <div class="use-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="https://www.globalgoals.org/terms-conditions/">Conditions</a></li>
+                        <li><a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="https://www.globalgoals.org/cookies/">Cookies</a></li>
+                        <li><a href="https://www.globalgoals.org/anti-corruption/">Anti Corruption</a></li>
+                        <li><a href="https://www.globalgoals.org/asset-licence/">Asset License</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-cont">
+                <div class="cont-pages">
+                    <h4>Content Pages</h4>
+                    <ul>
+                        <li><a href="content_ST3.html">Content 01</a></li>
+                        <li><a href="content_ST4.html">Content 02</a></li>
+                        <li><a href="content_ST1.html">Content 03</a></li>
+                        <li><a href="content_ST2.html">Content 04</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-cont">
+                <div class="our-team">
+                    <h4>Editors Page</h4>
+                    <ul>
+                        <li><a href="pageEditor_ST1.html">Student 01</a></li>
+                        <li><a href="pageEditor_ST2.html">Student 02</a></li>
+                        <li><a href="pageEditor_ST3.html">Student 03</a></li>
+                        <li><a href="pageEditor_ST4.html">Student 04</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section footer-2">
+            <div class="copyright">
+                <div class="copy-cont">
+                    <p>&copy; Copyright <b>United Nations</b>. All rights Reserved.<br>
+                        <b>Design By Group 4</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

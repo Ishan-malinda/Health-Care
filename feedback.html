@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="CSS/feedback.css">
+  <link rel="stylesheet" href="CSS/home.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="profile.html">User Profile</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+      <div class="logo">
+        <img src="Images/logo.jpg" alt="Health Care Logo">
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1>Feedback Form</h1>
+    <p><strong>Your feedback is very important to us! Please take a moment to share your thoughts.</strong></p>
+    <p><span style="color: red;"><strong>Required fields *</strong></span></p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+      <label for="full-name">Enter your name:</label>
+      <input type="text" id="full-name" name="full-name" required placeholder="Enter name here">
+
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter email here">
+
+      <label for="phone">Enter your telephone number:</label>
+      <input type="tel" id="phone" name="phone" required placeholder="Enter phone number here">
+
+      <label>Was this your first time visiting?</label>
+      <div class="radio-group">
+        <label>
+          Yes <input type="radio" id="yes" name="first-visit" value="yes">
+        </label>
+        <label>
+          No <input type="radio" id="no" name="first-visit" value="no">
+        </label>
+      </div>
+
+      <br>
+      <label>We kindly ask, was this website informative and easy to navigate?</label>
+      <div class="radio-group">
+        <label>
+          Yes <input type="radio" id="informative-yes" name="informative" value="yes">
+        </label>
+        <label>
+          No <input type="radio" id="informative-no" name="informative" value="no">
+        </label>
+      </div>
+
+      <label>If No, please share your reasons:</label>
+      <textarea id="reasons" name="reasons" rows="3" placeholder="Please specify..."></textarea>
+
+      <label>How satisfied are you with our services?</label>
+      <div class="rating">
+        <input type="radio" id="star5" name="satisfaction" value="5">
+        <label for="star5">★</label>
+
+        <input type="radio" id="star4" name="satisfaction" value="4">
+        <label for="star4">★</label>
+
+        <input type="radio" id="star3" name="satisfaction" value="3">
+        <label for="star3">★</label>
+
+        <input type="radio" id="star2" name="satisfaction" value="2">
+        <label for="star2">★</label>
+
+        <input type="radio" id="star1" name="satisfaction" value="1">
+        <label for="star1">★</label>
+      </div>
+
+      <label>Would you recommend our services?</label>
+      <div class="radio-group">
+        <label>
+          Yes <input type="radio" id="recommend-yes" name="recommend" value="yes">
+        </label>
+        <label>
+          No <input type="radio" id="recommend-no" name="recommend" value="no">
+        </label>
+      </div>
+
+      <label>Would you like to receive updates about the website and any offers?</label>
+      <select id="updates" name="updates">
+        <option value="yes">Yes - via Email</option>
+        <option value="no">No</option>
+      </select>
+
+      <label>Do you have any additional questions or requests?</label>
+      <textarea id="additional-requests" name="additional-requests" rows="3"
+        placeholder="Add your message here..."></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <!--Main Footer-->
+  <footer class="section footer">
+    <div class="footer-cont-main">
+      <div class="footer-logo">
+        <img src="Images/logo.jpg" alt="Footer Logo" class="footer-img">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/SustDev" class="social-icon"><i class="fab fa-facebook-f"><img
+                src="Images/fb.jpg.avif" alt="Facebook"></i></a>
+          <a href="https://twitter.com/SustDev" class="social-icon"><i class="fab fa-twitter"><img
+                src="Images/twitter.webp" alt="Twitter"></i></a>
+          <a href="https://www.youtube.com/user/uncsd2012/featured" class="social-icon"><i class="fab fa-youtube"><img
+                src="Images/yt.webp" alt="you tube"></i></a>
+          <a href="https://www.flickr.com/photos/sustdev/" class="social-icon"><i class="fab fa-flickr"><img
+                src="Images/flikr.png" alt="Flikr"></i></a>
+        </div>
+      </div>
+      <div class="footer-cont">
+        <div class="use-links">
+          <h4>Website Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="profile.html">User Profile</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-cont">
+        <div class="use-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="https://www.globalgoals.org/terms-conditions/">Conditions</a></li>
+            <li><a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="https://www.globalgoals.org/cookies/">Cookies</a></li>
+            <li><a href="https://www.globalgoals.org/anti-corruption/">Anti Corruption</a></li>
+            <li><a href="https://www.globalgoals.org/asset-licence/">Asset License</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-cont">
+        <div class="cont-pages">
+          <h4>Content Pages</h4>
+          <ul>
+            <li><a href="content_ST3.html">Content 01</a></li>
+            <li><a href="content_ST4.html">Content 02</a></li>
+            <li><a href="content_ST1.html">Content 03</a></li>
+            <li><a href="content_ST2.html">Content 04</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-cont">
+        <div class="our-team">
+          <h4>Editors Page</h4>
+          <ul>
+            <li><a href="pageEditor_ST1.html">Student 01</a></li>
+            <li><a href="pageEditor_ST2.html">Student 02</a></li>
+            <li><a href="pageEditor_ST3.html">Student 03</a></li>
+            <li><a href="pageEditor_ST4.html">Student 04</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section footer-2">
+      <div class="copyright">
+        <div class="copy-cont">
+          <p>&copy; Copyright <b>United Nations</b>. All rights Reserved.<br>
+            <b>Design By Student 3</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

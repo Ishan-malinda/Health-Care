@@ -1,0 +1,83 @@
+		body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            width: 50%;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        textarea, input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .radio-group input[type="radio"] {
+            margin-left: 5px; 
+            position: relative;
+            top: 3px; 
+        }
+        .rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: start;
+            gap: 5px; 
+        }
+        .rating input {
+            display: none;
+        }
+        .rating label {
+            font-size: 25px;
+            color: #ccc;
+            cursor: pointer;
+        }
+        .rating input:checked ~ label,
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: gold;
+        }
+
+        button {
+            display: block;
+            margin: auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+		footer {
+			text-align: center;
+			font-size: 16px;
+			padding: 10px;
+			background: #333;
+			color: white;
+			margin-top: 20px;
+		}

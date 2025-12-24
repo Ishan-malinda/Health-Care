@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 20px;
+}
+
+.container h1 {
+    font-size: 60px;
+    font-weight: lighter;  
+}
+
+.note {
+    font-size: light;
+}
+
+.team {
+    display: flex;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    font-weight: light;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.student {
+    position: relative; 
+    margin-bottom: 190px;
+}
+
+.student img {
+    height: 250px;
+    margin: 30px 30px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: all 0.5s;  
+}
+
+.student img:hover {
+    transform: scale(1.1);
+}
+
+.details {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4); 
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    display: none; 
+    line-height: 1.5;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.student img:hover ~.details {
+    display: block; /* Show additional details on hover */
+}
+footer {
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
