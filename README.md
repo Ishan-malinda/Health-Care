@@ -1,141 +1,63 @@
-# Health-Care
+🏥 Health Care Website
 
-A concise, clear README for the Health-Care project. This repository provides a health care application (web/mobile/backend) to manage patients, appointments, medical records, and more. The sections below are generic and written to be easily tailored to the specific tech stack and features of the project. If you want, I can update any section to reflect exact commands, environment variables, or architecture in your repository.
+A front-end Health Care website created to demonstrate strong fundamentals in HTML, CSS, and UI/UX design.
+The project focuses on building a clean, structured and user-friendly interface suitable for informational health-related content.
 
-## Table of Contents
-- Overview
-- Features
-- Tech Stack
-- Getting Started
-  - Prerequisites
-  - Installation
-  - Configuration
-  - Running the app
-- Usage
-- Project Structure
-- API (if applicable)
-- Testing
-- Deployment
-- Contributing
-- License
-- Contact
+🚀 Overview
 
-## Overview
-Health-Care is a project built to manage healthcare workflows such as patient records, appointments, prescriptions, and basic reporting. The goal is to provide a secure, extensible foundation that can be adapted for small clinics, telemedicine, or internal hospital tooling.
+This project showcases my ability to:
 
-## Features
-- Patient registration and profile management
-- Appointment scheduling and calendar integration
-- Medical record and notes storage
-- Basic reporting and analytics dashboards
-- Role-based access control (admin, doctor, nurse, receptionist, patient)
-- Notifications (email/SMS/push) for appointments and reminders
+Design clear and readable layouts
 
-> Note: If your implementation differs (for example, if this is only a backend API or a mobile app), tell me which sections to adapt and I will update the README accordingly.
+Structure web pages using semantic HTML
 
-## Tech Stack
-List the actual technologies used in your project. Example placeholders below — replace them with the real stack:
-- Frontend: React, Vue, Angular, or Flutter (if mobile)
-- Backend: Node.js (Express), Django, Flask, Ruby on Rails, or Spring Boot
-- Database: PostgreSQL, MySQL, MongoDB, or SQLite
-- Authentication: JWT, OAuth2, or session-based auth
-- Deployment: Docker, Kubernetes, Heroku, Vercel, AWS, or DigitalOcean
+Create responsive and accessible interfaces using CSS
 
-## Getting Started
-Follow these steps to set up the project locally. Update commands to match your repository's actual package manager and scripts.
+Apply UI/UX principles for real-world websites
 
-### Prerequisites
-- Git
-- Node.js (v14+), Python (3.8+), Ruby, or your project's runtime
-- Database server (Postgres, MySQL, etc.) if applicable
-- Docker (optional, recommended for consistent environments)
+✨ Key Features
 
-### Installation
-1. Clone the repository\n
-   git clone https://github.com/Ishan-malinda/Health-Care.git
-   cd Health-Care
+Clean and professional user interface
 
-2. Install dependencies (example for Node.js):\n
-   npm install
-   # or
-   yarn install
+Well-structured layout with multiple sections/pages
 
-3. Create and configure environment variables
-   - Copy the sample env: `cp .env.example .env` and update values (DATABASE_URL, SECRET_KEY, API_KEYS, etc.).
+Responsive design for desktop and mobile screens
 
-4. Initialize the database (if applicable):
+Simple and intuitive navigation
 
-   # Example for a Node/TypeORM or Sequelize project
-   npm run migrate
+Front-end only implementation
 
-### Running the app
-- Development mode (example):
+🛠 Technologies Used
 
-  npm run dev
+HTML5 – page structure and content
 
-- Production build and start (example):
+CSS3 – layout, styling, and responsiveness
 
-  npm run build
-  npm start
+🎯 Purpose of the Project
 
-## Usage
-Describe common workflows and how to use the app (screenshots or GIFs are helpful). Example: create a patient, schedule an appointment, add a medical note, run a report.
+This project was built as a portfolio and learning project to strengthen my front-end development skills and to practice designing websites that focus on usability and visual clarity.
 
-## Project Structure
-A brief overview of directories. Update to match your repo layout.
+📂 Project Structure
+Health-Care/
+│
+├── index.html
+├── style.css
+└── additional HTML/CSS files
 
-- /client — Frontend application (React/Vue/Angular)
-- /server — Backend/API (Node/Django/Flask)
-- /mobile — Mobile app (Flutter/React Native)
-- /docs — Documentation and design notes
+▶️ How to View
 
-## API (if applicable)
-If your project exposes a REST or GraphQL API, provide a short example request and response and link to full API docs or Postman collection. Example:
+Clone or download the repository
 
-- GET /api/patients — List patients
-- POST /api/appointments — Create appointment
+Open index.html in any modern web browser
 
-Example cURL:
+No additional setup is required.
 
-  curl -X POST https://your-api.example.com/api/appointments \
-    -H 'Content-Type: application/json' \
-    -d '{"patientId": "123","datetime":"2025-01-01T10:00:00Z","doctorId":"456"}'
+🌐 Live Demo
 
-## Testing
-Describe how to run tests. Example (Node.js):
+(Optional — add if enabled)
 
-  npm test
+https://Ishan-malinda.github.io/Health-Care/
 
-Add instructions for unit, integration, and end-to-end tests (Jest, Mocha, pytest, RSpec, Cypress).
+👤 Author
 
-## Deployment
-Include deployment instructions and any necessary Docker/Kubernetes manifests or links to CI/CD pipelines. Example with Docker:
-
-  docker build -t health-care .
-  docker run -p 3000:3000 --env-file .env health-care
-
-## Contributing
-Contributions are welcome! Please follow these steps:
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/awesome-feature`
-3. Commit your changes: `git commit -m 'Add awesome feature'`
-4. Push to the branch: `git push origin feature/awesome-feature`
-5. Open a pull request describing your changes
-
-Add a CODE_OF_CONDUCT.md and CONTRIBUTING.md if you want to establish rules and a review process.
-
-## License
-Add your license here (for example, MIT). If you don't have a choice yet, add a placeholder: `MIT` or `UNLICENSED`.
-
-## Contact
-If you'd like to contact the maintainer, include your details here:
-- Maintainer: Ishan Malinda (@Ishan-malinda)
-- Email: (add email or preferred contact method)
-
----
-
-This README is a draft. If you want, I can:
-- Tailor commands and examples to the exact tech stack in your repository
-- Add badges (build status, coverage, license)
-- Create a CONTRIBUTING.md and CODE_OF_CONDUCT.md
-
+W.F. Ishan Malinda
