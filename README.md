@@ -44,17 +44,7 @@ Health-Care/
 ├── style.css
 └── additional HTML/CSS files
 
-▶️ How to View
-
-Clone or download the repository
-
-Open index.html in any modern web browser
-
-No additional setup is required.
-
 🌐 Live Demo
-
-(Optional — add if enabled)
 
 https://Ishan-malinda.github.io/Health-Care/
 
